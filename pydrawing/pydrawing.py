@@ -36,6 +36,7 @@ class pydrawing():
         supported_beautifiers = {
             'cartoonise': CartooniseBeautifier,
             'cartoongan': CartoonGanBeautifier,
+            'douyineffect': DouyinEffectBeautifier,
             'pencildrawing': PencilDrawingBeautifier,
             'fastneuralstyletransfer': FastNeuralStyleTransferBeautifier,
         }

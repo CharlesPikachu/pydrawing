@@ -1,3 +1,6 @@
 '''initialize'''
 from .utils import Logger
-from .beautifiers import CartooniseBeautifier, PencilDrawingBeautifier, CartoonGanBeautifier, FastNeuralStyleTransferBeautifier
+from .beautifiers import (
+    CartooniseBeautifier, PencilDrawingBeautifier, CartoonGanBeautifier, FastNeuralStyleTransferBeautifier,
+    DouyinEffectBeautifier
+)

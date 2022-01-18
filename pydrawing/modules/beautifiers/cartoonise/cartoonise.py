@@ -6,7 +6,6 @@ Author:
 微信公众号:
     Charles的皮卡丘
 '''
-import os
 import cv2
 import numpy as np
 from ..base import BaseBeautifier

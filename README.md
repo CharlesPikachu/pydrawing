@@ -28,6 +28,7 @@ You can star this repository to keep track of the project if it's helpful for yo
 | pencildrawing              | [click](https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw) | [click](https://jiaya.me/archive/projects/pencilsketch/npar12_pencil.pdf)        | [click](./pydrawing/modules/beautifiers/pencildrawing)            |  铅笔素描画   |
 | cartoongan                 | [click]()                                                  | [click](https://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2205.pdf)    | [click](./pydrawing/modules/beautifiers/cartoongan)               |  卡通GAN      |
 | fastneuralstyletransfer    | [click]()                                                  | [click](https://cs.stanford.edu/people/jcjohns/papers/eccv16/JohnsonECCV16.pdf)  | [click](./pydrawing/modules/beautifiers/fastneuralstyletransfer)  |  快速风格迁移 |
+| douyineffect               | [click]()                                                  | N/A                                                                              | [click](./pydrawing/modules/beautifiers/douyineffect)             |  抖音特效     |
 
 
 # Install
