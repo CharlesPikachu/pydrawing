@@ -31,6 +31,9 @@ You can star this repository to keep track of the project if it's helpful for yo
 
 # Install
 
+#### Preparation
+- [Pytorch](https://pytorch.org/get-started/previous-versions/): To apply some of the supported beautifiers (e.g., cartoongan), you need to install pytorch and corresponding dependencies following [tutorial](https://pytorch.org/get-started/previous-versions/).
+
 #### Pip install
 ```sh
 run "pip install pydrawing"
