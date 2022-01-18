@@ -2,5 +2,5 @@
 from .utils import Logger
 from .beautifiers import (
     CartooniseBeautifier, PencilDrawingBeautifier, CartoonGanBeautifier, FastNeuralStyleTransferBeautifier,
-    DouyinEffectBeautifier, CharacterizeBeautifier, PhotomosaicBeautifier
+    DouyinEffectBeautifier, CharacterizeBeautifier, PhotomosaicBeautifier, GlitchBeautifier
 )

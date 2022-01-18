@@ -34,6 +34,7 @@ class pydrawing():
     '''初始化美化器'''
     def initializebeautifiers(self):
         supported_beautifiers = {
+            'glitch': GlitchBeautifier,
             'cartoonise': CartooniseBeautifier,
             'cartoongan': CartoonGanBeautifier,
             'photomosaic': PhotomosaicBeautifier,

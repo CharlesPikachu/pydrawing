@@ -1,4 +1,5 @@
 '''initialize'''
+from .glitch import GlitchBeautifier
 from .cartoonise import CartooniseBeautifier
 from .cartoongan import CartoonGanBeautifier
 from .photomosaic import PhotomosaicBeautifier
