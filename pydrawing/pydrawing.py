@@ -35,6 +35,7 @@ class pydrawing():
     def initializebeautifiers(self):
         supported_beautifiers = {
             'cartoonise': CartooniseBeautifier,
+            'cartoongan': CartoonGanBeautifier,
             'pencildrawing': PencilDrawingBeautifier,
         }
         return supported_beautifiers

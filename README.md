@@ -22,10 +22,11 @@ You can star this repository to keep track of the project if it's helpful for yo
 
 
 # Support List
-| Beautifier       | Introduction                                               | Related Paper                                                              | Code                                                    |  in Chinese   |
-| :----:           | :----:                                                     | :----:                                                                     | :----:                                                  |  :----:       |
-| cartoonise       | [click](https://mp.weixin.qq.com/s/efwNQl0JVJt6_x_evdL41A) | N/A                                                                        | [click](./pydrawing/modules/beautifiers/cartoonise)     |  图像卡通化   |
-| pencildrawing    | [click](https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw) | [click](https://jiaya.me/archive/projects/pencilsketch/npar12_pencil.pdf)  | [click](./pydrawing/modules/beautifiers/pencildrawing)  |  铅笔素描画   |
+| Beautifier       | Introduction                                               | Related Paper                                                                  | Code                                                    |  in Chinese   |
+| :----:           | :----:                                                     | :----:                                                                         | :----:                                                  |  :----:       |
+| cartoonise       | [click](https://mp.weixin.qq.com/s/efwNQl0JVJt6_x_evdL41A) | N/A                                                                            | [click](./pydrawing/modules/beautifiers/cartoonise)     |  图像卡通化   |
+| pencildrawing    | [click](https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw) | [click](https://jiaya.me/archive/projects/pencilsketch/npar12_pencil.pdf)      | [click](./pydrawing/modules/beautifiers/pencildrawing)  |  铅笔素描画   |
+| cartoongan       | [click]()                                                  | [click](https://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2205.pdf)  | [click](./pydrawing/modules/beautifiers/cartoongan)     |  卡通GAN      |
 
 
 # Install
