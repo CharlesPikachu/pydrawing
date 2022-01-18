@@ -24,16 +24,18 @@ You can star this repository to keep track of the project if it's helpful for yo
 # Support List
 | Beautifier                 | Introduction                                               | Related Paper                                                                    | Code                                                              |  in Chinese   |
 | :----:                     | :----:                                                     | :----:                                                                           | :----:                                                            |  :----:       |
+| douyineffect               | [click](https://mp.weixin.qq.com/s/RRnrO2H84pvtUdDsAYD9Qg) | N/A                                                                              | [click](./pydrawing/modules/beautifiers/douyineffect)             |  抖音特效     |
+| characterize               | [click](https://mp.weixin.qq.com/s/yaNQJyeUeisOenEeoVsgDg) | N/A                                                                              | [click](./pydrawing/modules/beautifiers/characterize)             |  视频转字符画 |
 | cartoonise                 | [click](https://mp.weixin.qq.com/s/efwNQl0JVJt6_x_evdL41A) | N/A                                                                              | [click](./pydrawing/modules/beautifiers/cartoonise)               |  图像卡通化   |
 | pencildrawing              | [click](https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw) | [click](https://jiaya.me/archive/projects/pencilsketch/npar12_pencil.pdf)        | [click](./pydrawing/modules/beautifiers/pencildrawing)            |  铅笔素描画   |
 | cartoongan                 | [click]()                                                  | [click](https://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2205.pdf)    | [click](./pydrawing/modules/beautifiers/cartoongan)               |  卡通GAN      |
-| fastneuralstyletransfer    | [click]()                                                  | [click](https://cs.stanford.edu/people/jcjohns/papers/eccv16/JohnsonECCV16.pdf)  | [click](./pydrawing/modules/beautifiers/fastneuralstyletransfer)  |  快速风格迁移 |
-| douyineffect               | [click]()                                                  | N/A                                                                              | [click](./pydrawing/modules/beautifiers/douyineffect)             |  抖音特效     |
+| fastneuralstyletransfer    | [click](https://mp.weixin.qq.com/s/Ed-1fWOIhI52G-Ugrv7n9Q) | [click](https://cs.stanford.edu/people/jcjohns/papers/eccv16/JohnsonECCV16.pdf)  | [click](./pydrawing/modules/beautifiers/fastneuralstyletransfer)  |  快速风格迁移 |
 
 
 # Install
 
 #### Preparation
+- [ffmpeg](https://ffmpeg.org/): You should set ffmpeg in environment variable.
 - [Pytorch](https://pytorch.org/get-started/previous-versions/): To apply some of the supported beautifiers (e.g., cartoongan), you need to install pytorch and corresponding dependencies following [tutorial](https://pytorch.org/get-started/previous-versions/).
 
 #### Pip install
@@ -67,7 +69,8 @@ drawing_client.execute(filepath, random.choice(drawing_client.getallsupports()))
 
 
 # Screenshot
-![img](./docs/screenshot.jpg)
+![img](./docs/screenshot_characterize.gif)
+![img](./docs/screenshot_fastneuralstyletransfer.gif)
 
 
 # Projects in Charles_pikachu

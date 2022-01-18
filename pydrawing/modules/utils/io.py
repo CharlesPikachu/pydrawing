@@ -25,10 +25,10 @@ def Images2VideoAndSave(images, savedir='outputs', savename='output', fps=25, ex
     fourcc = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
     video_writer = cv2.VideoWriter(savepath, fourcc, fps, (images[0].shape[1], images[0].shape[0]))
     pbar = tqdm(images)
-    for image in tqdm(images):
-        pbar.set_description(f'Writing image to {savepath}...')
+    for image in pbar:
+        pbar.set_description(f'Writing image to {savepath}')
         video_writer.write(image)
-    if logger_handle is not None: logger_handle.info(f'Video is saved into {savepath}...')
+    if logger_handle is not None: logger_handle.info(f'Video is saved into {savepath}')
 
 
 '''保存图片'''
@@ -36,7 +36,7 @@ def SaveImage(image, savedir='outputs', savename='output', ext='png', logger_han
     checkdir(savedir)
     savepath = os.path.join(savedir, savename + f'.{ext}')
     cv2.imwrite(savepath, image)
-    if logger_handle is not None: logger_handle.info(f'Image is saved into {savepath}...')
+    if logger_handle is not None: logger_handle.info(f'Image is saved into {savepath}')
 
 
 '''读取视频'''
