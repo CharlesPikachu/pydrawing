@@ -27,6 +27,7 @@ You can star this repository to keep track of the project if it's helpful for yo
 | douyineffect               | [click](https://mp.weixin.qq.com/s/RRnrO2H84pvtUdDsAYD9Qg) | N/A                                                                              | [click](./pydrawing/modules/beautifiers/douyineffect)             |  抖音特效     |
 | characterize               | [click](https://mp.weixin.qq.com/s/yaNQJyeUeisOenEeoVsgDg) | N/A                                                                              | [click](./pydrawing/modules/beautifiers/characterize)             |  视频转字符画 |
 | cartoonise                 | [click](https://mp.weixin.qq.com/s/efwNQl0JVJt6_x_evdL41A) | N/A                                                                              | [click](./pydrawing/modules/beautifiers/cartoonise)               |  图像卡通化   |
+| photomosaic                | [click](https://mp.weixin.qq.com/s/BG1VW3jx0LUazhhifBapVw) | N/A                                                                              | [click](./pydrawing/modules/beautifiers/photomosaic)              |  拼马赛克图片 |
 | pencildrawing              | [click](https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw) | [click](https://jiaya.me/archive/projects/pencilsketch/npar12_pencil.pdf)        | [click](./pydrawing/modules/beautifiers/pencildrawing)            |  铅笔素描画   |
 | cartoongan                 | [click]()                                                  | [click](https://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2205.pdf)    | [click](./pydrawing/modules/beautifiers/cartoongan)               |  卡通GAN      |
 | fastneuralstyletransfer    | [click](https://mp.weixin.qq.com/s/Ed-1fWOIhI52G-Ugrv7n9Q) | [click](https://cs.stanford.edu/people/jcjohns/papers/eccv16/JohnsonECCV16.pdf)  | [click](./pydrawing/modules/beautifiers/fastneuralstyletransfer)  |  快速风格迁移 |
@@ -69,8 +70,18 @@ drawing_client.execute(filepath, random.choice(drawing_client.getallsupports()))
 
 
 # Screenshot
-![img](./docs/screenshot_characterize.gif)
-![img](./docs/screenshot_fastneuralstyletransfer.gif)
+<div align="center">
+  <img src="./docs/screenshot_characterize.gif" width="600"/>
+</div>
+<br />
+<div align="center">
+  <img src="./docs/screenshot_fastneuralstyletransfer.gif" width="600"/>
+</div>
+<br />
+<div align="center">
+  <img src="./docs/screenshot_photomosaic.png" width="600"/>
+</div>
+<br />
 
 
 # Projects in Charles_pikachu

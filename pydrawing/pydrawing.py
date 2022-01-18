@@ -36,6 +36,7 @@ class pydrawing():
         supported_beautifiers = {
             'cartoonise': CartooniseBeautifier,
             'cartoongan': CartoonGanBeautifier,
+            'photomosaic': PhotomosaicBeautifier,
             'characterize': CharacterizeBeautifier,
             'douyineffect': DouyinEffectBeautifier,
             'pencildrawing': PencilDrawingBeautifier,
