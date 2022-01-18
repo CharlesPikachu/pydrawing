@@ -4,6 +4,7 @@
 ## 环境配置
 - 操作系统: Linux or macOS or Windows
 - Python版本: Python3.6+
+- ffmpeg: 若输入视频中含有音频, 需要借助[ffmpeg](https://ffmpeg.org/)解码, 因此需要保证电脑中存在ffmpeg并在环境变量中。
 - Pytorch: 若需要使用CartoonGan等算法, 需要安装Pytorch>=1.0.0和配置对应的环境, 详见[官方文档](https://pytorch.org/get-started/locally/)。
 
 
