@@ -37,6 +37,7 @@ class pydrawing():
             'cartoonise': CartooniseBeautifier,
             'cartoongan': CartoonGanBeautifier,
             'pencildrawing': PencilDrawingBeautifier,
+            'fastneuralstyletransfer': FastNeuralStyleTransferBeautifier,
         }
         return supported_beautifiers
 
@@ -45,4 +46,4 @@ class pydrawing():
 if __name__ == '__main__':
     import random
     drawing_client = pydrawing()
-    drawing_client.execute('asserts/input.jpg', random.choice(drawing_client.getallsupports()))
+    drawing_client.execute('asserts/dog.jpg', random.choice(drawing_client.getallsupports()))

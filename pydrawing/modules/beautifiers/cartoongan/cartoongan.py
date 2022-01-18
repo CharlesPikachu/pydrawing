@@ -155,7 +155,7 @@ class CartoonGanBeautifier(BaseBeautifier):
         input_image = transforms.ToTensor()(image).unsqueeze(0)
         input_image = -1 + 2 * input_image
         if torch.cuda.is_available(): input_image = input_image.cuda()
-        output_image = self.transformer(input_image)[0]
+        with torch.no_grad(): output_image = self.transformer(input_image)[0]
         output_image = output_image.data.cpu().float() * 0.5 + 0.5
         output_image = (output_image.numpy() * 255).astype(np.uint8)
         output_image = np.transpose(output_image, (1, 2, 0))

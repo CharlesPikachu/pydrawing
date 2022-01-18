@@ -54,7 +54,7 @@ run "pip install git+https://github.com/CharlesPikachu/pydrawing.git@master"
 import random
 from pydrawing import pydrawing
 
-filepath = 'asserts/input.jpg'
+filepath = 'asserts/dog.jpg'
 config = {
     "savedir": "outputs",
     "savename": "output"
