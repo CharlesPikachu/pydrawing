@@ -20,10 +20,11 @@ class PhotomosaicBeautifier(BaseBeautifier):
         super(PhotomosaicBeautifier, self).__init__(**kwargs)
         self.block_size = block_size
         self.src_images_dir = src_images_dir
+        self.src_images, self.avg_colors = self.ReadSourceImages()
     '''迭代图片'''
     def iterimage(self, image):
         output_image = np.zeros(image.shape, np.uint8)
-        src_images, avg_colors = self.ReadSourceImages()
+        src_images, avg_colors = self.src_images, self.avg_colors
         for i, j in tqdm(product(range(int(image.shape[1]/self.block_size)), range(int(image.shape[0]/self.block_size)))):
             block = image[j*self.block_size: (j+1)*self.block_size, i*self.block_size: (i+1)*self.block_size, :]
             avg_color = np.sum(np.sum(block, axis=0), axis=0) / (self.block_size * self.block_size)

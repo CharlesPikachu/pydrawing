@@ -65,8 +65,8 @@ config = {
     "savedir": "outputs",
     "savename": "output"
 }
-drawing_client = pydrawing()
-drawing_client.execute(filepath, random.choice(drawing_client.getallsupports()))
+drawing_client = pydrawing.pydrawing()
+drawing_client.execute(filepath, random.choice(drawing_client.getallsupports()), config=config)
 ```
 
 
