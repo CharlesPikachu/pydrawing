@@ -1,5 +1,4 @@
 opencv-python
 numpy
-argparse
+tqdm
 pillow
-scipy

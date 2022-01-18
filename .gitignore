@@ -60,6 +60,7 @@ db.sqlite3
 instance/
 .webassets-cache
 
+
 # Scrapy stuff:
 .scrapy
 
@@ -102,3 +103,4 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+

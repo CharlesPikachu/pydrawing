@@ -1,49 +1,78 @@
-# PencilDrawing
+<div align="center">
+  <img src="./docs/logo.png" width="600"/>
+</div>
+<br />
+
+[![docs](https://img.shields.io/badge/docs-latest-blue)](https://pydrawing.readthedocs.io/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pydrawing)](https://pypi.org/project/pydrawing/)
+[![PyPI](https://img.shields.io/pypi/v/pydrawing)](https://pypi.org/project/pydrawing)
+[![license](https://img.shields.io/github/license/CharlesPikachu/pydrawing.svg)](https://github.com/CharlesPikachu/pydrawing/blob/master/LICENSE)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/pydrawing?style=flat-square)](https://pypi.org/project/pydrawing/)
+[![issue resolution](https://isitmaintained.com/badge/resolution/CharlesPikachu/pydrawing.svg)](https://github.com/CharlesPikachu/pydrawing/issues)
+[![open issues](https://isitmaintained.com/badge/open/CharlesPikachu/pydrawing.svg)](https://github.com/CharlesPikachu/pydrawing/issues)
+
+Documents: https://pydrawing.readthedocs.io/
+
+
+# Pydrawing
 ```
-Implementation of "Combining Sketch and Tone for Pencil Drawing Production-Cewu Lu, Li Xu, Jiaya Jia".
+Beautify your image or video.
 You can star this repository to keep track of the project if it's helpful for you, thank you for your support.
 ```
 
-# Introduction
-#### in Chinese
-https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw
 
-# Environment
-```
-OS: Windows 10
-Python: python3.x with the packages in requirements.txt
-```
+# Support List
+| Beautifier       | Introduction                                               | Related Paper                                                              | Code                                                    |  in Chinese   |
+| :----:           | :----:                                                     | :----:                                                                     | :----:                                                  |  :----:       |
+| cartoonise       | [click](https://mp.weixin.qq.com/s/efwNQl0JVJt6_x_evdL41A) | N/A                                                                        | [click](./pydrawing/modules/beautifiers/cartoonise)     |  图像卡通化   |
+| pencildrawing    | [click](https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw) | [click](https://jiaya.me/archive/projects/pencilsketch/npar12_pencil.pdf)  | [click](./pydrawing/modules/beautifiers/pencildrawing)  |  铅笔素描画   |
 
-# Usage
-```
-usage: main.py [-h] [-i IMAGE_PATH] [-m MODE] [-s SAVENAME]
 
-PencilDrawing
+# Install
 
-optional arguments:
-  -h, --help     show this help message and exit
-  -i IMAGE_PATH  the path of image need to be processed
-  -m MODE        color or gray
-  -s SAVENAME    filename of output
-
-cmd example:
-python main.py -i testPic/1.jpg -m color -s output.jpg
+#### Pip install
+```sh
+run "pip install pydrawing"
 ```
 
-# Results
-![img](./docs/2_color.jpg)![img](./docs/2_gray.jpg)  
-![img](./docs/3_color.jpg)![img](./docs/3_gray.jpg)  
-![img](./docs/4_color.jpg)![img](./docs/4_gray.jpg)  
+#### Source code install
+```sh
+(1) Offline
+Step1: git clone https://github.com/CharlesPikachu/pydrawing.git
+Step2: cd pydrawing -> run "python setup.py install"
+(2) Online
+run "pip install git+https://github.com/CharlesPikachu/pydrawing.git@master"
+```
 
-# References
+
+# Quick Start
+```python
+import random
+from pydrawing import pydrawing
+
+filepath = 'asserts/input.jpg'
+config = {
+    "savedir": "outputs",
+	"savename": "output"
+}
+drawing_client = pydrawing()
+drawing_client.execute(filepath, random.choice(drawing_client.getallsupports()))
 ```
-[1] https://zh.wikipedia.org/wiki/%E5%8F%8D%E9%8B%B8%E9%BD%92
-[2] http://www.cse.cuhk.edu.hk/~leojia/projects/pencilsketch/pencil_drawing.htm
-[3] Lu C, Xu L, Jia J. Combining sketch and tone for pencil drawing production[C]//Proceedings of the Symposium on Non-Photorealistic Animation and Rendering. Eurographics Association, 2012: 65-73.
-[4] https://github.com/duduainankai/pencil-python
-[5] https://github.com/taldatech/image2pencil-drawing
-[6] https://github.com/candycat1992/PencilDrawing
-```
+
+
+# Screenshot
+![img](./docs/screenshot.jpg)
+
+
+# Projects in Charles_pikachu
+- [Games](https://github.com/CharlesPikachu/Games): Create interesting games by pure python.
+- [DecryptLogin](https://github.com/CharlesPikachu/DecryptLogin): APIs for loginning some websites by using requests.
+- [Musicdl](https://github.com/CharlesPikachu/musicdl): A lightweight music downloader written by pure python.
+- [Videodl](https://github.com/CharlesPikachu/videodl): A lightweight video downloader written by pure python.
+- [Pytools](https://github.com/CharlesPikachu/pytools): Some useful tools written by pure python.
+- [PikachuWeChat](https://github.com/CharlesPikachu/pikachuwechat): Play WeChat with itchat-uos.
+- [Pydrawing](https://github.com/CharlesPikachu/pydrawing): Beautify your image or video.
+
 
 # More
 #### WeChat Official Accounts
