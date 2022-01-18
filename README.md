@@ -53,7 +53,7 @@ from pydrawing import pydrawing
 filepath = 'asserts/input.jpg'
 config = {
     "savedir": "outputs",
-	"savename": "output"
+    "savename": "output"
 }
 drawing_client = pydrawing()
 drawing_client.execute(filepath, random.choice(drawing_client.getallsupports()))
