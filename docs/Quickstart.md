@@ -18,6 +18,22 @@ drawing_client = pydrawing.pydrawing()
 drawing_client.execute(filepath, 'cartoonise', config=config)
 ```
 
+### 人脸卡通化
+#### 相关论文
+[Paper](https://arxiv.org/pdf/1907.10830.pdf)
+#### 公众号文章介绍
+[Introduction]()
+#### 调用示例
+```python
+from pydrawing import pydrawing
+
+config = {'use_face_segmentor': False}
+filepath = 'input.jpg'
+drawing_client = pydrawing.pydrawing()
+drawing_client.execute(filepath, 'cartoonizeface', config=config)
+```
+
+
 ### 铅笔素描画
 #### 相关论文
 [Paper](https://jiaya.me/archive/projects/pencilsketch/npar12_pencil.pdf)
@@ -37,7 +53,7 @@ drawing_client.execute(filepath, 'pencildrawing', config=config)
 #### 相关论文
 [Paper](https://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2205.pdf)
 #### 公众号文章介绍
-[Introduction]()
+[Introduction](https://mp.weixin.qq.com/s/18fUOO5fH1PVUzTMNNCWwQ)
 #### 调用示例
 ```python
 from pydrawing import pydrawing

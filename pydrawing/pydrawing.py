@@ -41,6 +41,7 @@ class pydrawing():
             'characterize': CharacterizeBeautifier,
             'douyineffect': DouyinEffectBeautifier,
             'pencildrawing': PencilDrawingBeautifier,
+            'cartoonizeface': CartoonizeFaceBeautifier,
             'fastneuralstyletransfer': FastNeuralStyleTransferBeautifier,
         }
         return supported_beautifiers
