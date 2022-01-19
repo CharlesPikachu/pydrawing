@@ -136,7 +136,7 @@ class Transformer(nn.Module):
 
 '''复现论文"CartoonGAN: Generative Adversarial Networks for Photo Cartoonization"'''
 class CartoonGanBeautifier(BaseBeautifier):
-    def __init__(self, style='Hosoda', **kwargs):
+    def __init__(self, style='Hosoda', use_cuda=True, **kwargs):
         super(CartoonGanBeautifier, self).__init__(**kwargs)
         self.model_urls = {
             'Hayao': 'http://vllab1.ucmerced.edu/~yli62/CartoonGAN/pytorch_pth/Hayao_net_G_float.pth',
@@ -146,16 +146,19 @@ class CartoonGanBeautifier(BaseBeautifier):
         }
         assert style in self.model_urls
         self.style = style
+        self.use_cuda = use_cuda
         self.transformer = Transformer()
         self.transformer.load_state_dict(model_zoo.load_url(self.model_urls[style]))
         self.transformer.eval()
-        if torch.cuda.is_available(): self.transformer = self.transformer.cuda()
+        if torch.cuda.is_available() and self.use_cuda: self.transformer = self.transformer.cuda()
     '''迭代图片'''
     def iterimage(self, image):
         input_image = transforms.ToTensor()(image).unsqueeze(0)
         input_image = -1 + 2 * input_image
-        if torch.cuda.is_available(): input_image = input_image.cuda()
-        with torch.no_grad(): output_image = self.transformer(input_image)[0]
+        if torch.cuda.is_available() and self.use_cuda: 
+            input_image = input_image.cuda()
+        with torch.no_grad(): 
+            output_image = self.transformer(input_image)[0]
         output_image = output_image.data.cpu().float() * 0.5 + 0.5
         output_image = (output_image.numpy() * 255).astype(np.uint8)
         output_image = np.transpose(output_image, (1, 2, 0))

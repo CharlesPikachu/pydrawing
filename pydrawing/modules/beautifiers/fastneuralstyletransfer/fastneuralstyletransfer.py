@@ -73,7 +73,7 @@ class TransformerNet(nn.Module):
 
 '''复现论文"Perceptual Losses for Real-Time Style Transfer and Super-Resolution"'''
 class FastNeuralStyleTransferBeautifier(BaseBeautifier):
-    def __init__(self, style='starrynight', **kwargs):
+    def __init__(self, style='starrynight', use_cuda=True, **kwargs):
         super(FastNeuralStyleTransferBeautifier, self).__init__(**kwargs)
         self.model_urls = {
             'cuphead': 'https://github.com/CharlesPikachu/pydrawing/releases/download/checkpoints/fastneuralstyletransfer_cuphead.pth',
@@ -85,16 +85,19 @@ class FastNeuralStyleTransferBeautifier(BaseBeautifier):
         self.preprocess = transforms.Compose([transforms.ToTensor(), transforms.Normalize(self.mean, self.std)])
         assert style in self.model_urls
         self.style = style
+        self.use_cuda = use_cuda
         self.transformer = TransformerNet()
         self.transformer.load_state_dict(model_zoo.load_url(self.model_urls[style]))
         self.transformer.eval()
-        if torch.cuda.is_available(): self.transformer = self.transformer.cuda()
+        if torch.cuda.is_available() and self.use_cuda: self.transformer = self.transformer.cuda()
     '''迭代图片'''
     def iterimage(self, image):
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         input_image = self.preprocess(image).unsqueeze(0)
-        if torch.cuda.is_available(): input_image = input_image.cuda()
-        with torch.no_grad(): output_image = self.transformer(input_image)[0]
+        if torch.cuda.is_available() and self.use_cuda: 
+            input_image = input_image.cuda()
+        with torch.no_grad(): 
+            output_image = self.transformer(input_image)[0]
         output_image = output_image.data.cpu().float()
         for c in range(3):
             output_image[c, :].mul_(self.std[c]).add_(self.mean[c])
