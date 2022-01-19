@@ -346,7 +346,7 @@ class ResnetGenerator(nn.Module):
 
 '''人脸卡通化'''
 class CartoonizeFaceBeautifier(BaseBeautifier):
-    def __init__(self, use_cuda=False, use_face_segmentor=False, **kwargs):
+    def __init__(self, use_cuda=False, use_face_segmentor=True, **kwargs):
         super(CartoonizeFaceBeautifier, self).__init__(**kwargs)
         self.model_urls = {
             'transformer': 'https://github.com/CharlesPikachu/pydrawing/releases/download/checkpoints/cartoonizeface_transformer.pth',
@@ -371,9 +371,10 @@ class CartoonizeFaceBeautifier(BaseBeautifier):
         # 人脸分割
         if self.use_face_segmentor:
             face_rgb_for_seg = self.face_segmentor.preprocess(face_rgb)
-            mask = self.face_segmentor(face_rgb_for_seg)[0].argmax(0).cpu().numpy().astype(np.int32)
+            mask = self.face_segmentor(face_rgb_for_seg)
+            mask = F.interpolate(mask, size=face_rgb.shape[:2][::-1], mode='bilinear', align_corners=False)
+            mask = mask[0].argmax(0).cpu().numpy().astype(np.int32)
             mask = self.face_segmentor.getfacemask(mask)
-            mask = cv2.resize(mask, face_rgb.shape[:2][::-1], interpolation=cv2.INTER_AREA)
         else:
             mask = np.ones(face_rgb.shape[:2]) * 255
         mask = mask[:, :, np.newaxis]
