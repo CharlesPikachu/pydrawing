@@ -43,7 +43,8 @@ class pydrawing():
             'douyineffect': DouyinEffectBeautifier,
             'pencildrawing': PencilDrawingBeautifier,
             'cartoonizeface': CartoonizeFaceBeautifier,
-            'geneticfitting': GeneticFittingBeautifier,
+            'geneticfittingcircle': GeneticFittingCircleBeautifier,
+            'geneticfittingpolygon': GeneticFittingPolygonBeautifier,
             'fastneuralstyletransfer': FastNeuralStyleTransferBeautifier,
         }
         return supported_beautifiers

@@ -8,5 +8,5 @@ from .characterize import CharacterizeBeautifier
 from .douyineffect import DouyinEffectBeautifier
 from .pencildrawing import PencilDrawingBeautifier
 from .cartoonizeface import CartoonizeFaceBeautifier
-from .geneticfitting import GeneticFittingBeautifier
 from .fastneuralstyletransfer import FastNeuralStyleTransferBeautifier
+from .geneticfitting import GeneticFittingCircleBeautifier, GeneticFittingPolygonBeautifier

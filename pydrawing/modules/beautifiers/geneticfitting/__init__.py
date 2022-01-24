@@ -1,2 +1,3 @@
 '''initialize'''
-from .geneticfitting import GeneticFittingBeautifier
+from .geneticfittingcircle import GeneticFittingCircleBeautifier
+from .geneticfittingpolygon import GeneticFittingPolygonBeautifier
