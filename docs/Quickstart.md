@@ -261,6 +261,118 @@ drawing_client.execute(filepath, 'glitch')
 - intensity: 随机扰动相关的参数, 默认值为"0.1";
 - block_size: 一次读取文件的大小, 默认值为"100"。
 
+#### 贝塞尔曲线画画
+
+1.相关论文
+
+暂无
+
+2.公众号文章介绍
+
+[Introduction](https://mp.weixin.qq.com/s/SWpaTPw9tOLs5h1EgP30Vw)
+
+3.调用示例
+
+```python
+from pydrawing import pydrawing
+
+filepath = 'input.jpg'
+drawing_client = pydrawing.pydrawing()
+drawing_client.execute(filepath, 'beziercurve')
+```
+
+4.config选项
+
+- savename: 保存结果时用的文件名, 默认值为"output";
+- savedir: 保存结果时用的文件夹, 默认值为"outputs";
+- merge_audio: 处理视频时, 是否把原视频中的音频合成到生成的视频中, 默认值为"False";
+- num_samples: 采样点, 默认值为"15";
+- width: 坐标变换宽度, 默认值为"600";
+- height: 坐标变换高度, 默认值为"600";
+- num_colors: 使用的颜色数量, 默认值为"32"。
+
+#### 遗传算法拟合图像-圆形
+
+1.相关论文
+
+暂无
+
+2.公众号文章介绍
+
+[Introduction]()
+
+3.调用示例
+
+```python
+from pydrawing import pydrawing
+
+filepath = 'input.jpg'
+drawing_client = pydrawing.pydrawing()
+drawing_client.execute(filepath, 'geneticfittingcircle')
+```
+
+4.config选项
+
+- savename: 保存结果时用的文件名, 默认值为"output";
+- savedir: 保存结果时用的文件夹, 默认值为"outputs";
+- merge_audio: 处理视频时, 是否把原视频中的音频合成到生成的视频中, 默认值为"False";
+- cache_dir: 中间结果保存的文件夹, 默认值为"cache";
+- save_cache: 是否保存中间结果, 默认值为"True";
+- init_cfg: 算法初始化参数, 默认值为如下:
+```python
+init_cfg = {
+	'num_populations': 10,
+	'init_num_circles': 1,
+	'num_generations': 1e5,
+	'print_interval': 1,
+	'mutation_rate': 0.1,
+	'selection_rate': 0.5,
+	'crossover_rate': 0.5,
+	'circle_cfg': {'radius_range': 50, 'radius_shift_range': 50, 'center_shift_range': 50, 'color_shift_range': 50},
+}
+```
+
+#### 遗传算法拟合图像-多边形
+
+1.相关论文
+
+暂无
+
+2.公众号文章介绍
+
+[Introduction]()
+
+3.调用示例
+
+```python
+from pydrawing import pydrawing
+
+filepath = 'input.jpg'
+drawing_client = pydrawing.pydrawing()
+drawing_client.execute(filepath, 'geneticfittingpolygon')
+```
+
+4.config选项
+
+- savename: 保存结果时用的文件名, 默认值为"output";
+- savedir: 保存结果时用的文件夹, 默认值为"outputs";
+- merge_audio: 处理视频时, 是否把原视频中的音频合成到生成的视频中, 默认值为"False";
+- cache_dir: 中间结果保存的文件夹, 默认值为"cache";
+- save_cache: 是否保存中间结果, 默认值为"True";
+- init_cfg: 算法初始化参数, 默认值为如下:
+```python
+init_cfg = {
+	'num_populations': 10,
+	'num_points_list': list(range(3, 40)),
+	'init_num_polygons': 1,
+	'num_generations': 1e5,
+	'print_interval': 1,
+	'mutation_rate': 0.1,
+	'selection_rate': 0.5,
+	'crossover_rate': 0.5,
+	'polygon_cfg': {'size': 50, 'shift_range': 50, 'point_range': 50, 'color_range': 50},
+}
+```
 
 ## 随机运行一个小程序
 
