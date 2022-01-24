@@ -22,6 +22,9 @@ package_data = {}
 package_data.update({
     'pydrawing.modules.beautifiers.pencildrawing': ['textures/*'] 
 })
+package_data.update({
+    'pydrawing.modules.beautifiers.beziercurve': ['potrace.exe'] 
+})
 
 
 '''setup'''

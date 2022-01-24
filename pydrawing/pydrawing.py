@@ -21,7 +21,7 @@ class pydrawing():
         self.supported_beautifiers = self.initializebeautifiers()
         self.logger_handle = Logger(kwargs.get('logfilepath', 'pydrawing.log'))
     '''执行对应的算法'''
-    def execute(self, filepath, beautifier_type=None, config={}):
+    def execute(self, filepath='asserts/dog.jpg', beautifier_type=None, config={}):
         assert beautifier_type in self.supported_beautifiers, 'unsupport beautifier_type %s' % beautifier_type
         if 'savedir' not in config: config['savedir'] = 'outputs'
         if 'savename' not in config: config['savename'] = 'output'
@@ -37,14 +37,19 @@ class pydrawing():
             'glitch': GlitchBeautifier,
             'cartoonise': CartooniseBeautifier,
             'cartoongan': CartoonGanBeautifier,
+            'beziercurve': BezierCurveBeautifier,
             'photomosaic': PhotomosaicBeautifier,
             'characterize': CharacterizeBeautifier,
             'douyineffect': DouyinEffectBeautifier,
             'pencildrawing': PencilDrawingBeautifier,
             'cartoonizeface': CartoonizeFaceBeautifier,
+            'geneticfitting': GeneticFittingBeautifier,
             'fastneuralstyletransfer': FastNeuralStyleTransferBeautifier,
         }
         return supported_beautifiers
+    '''repr'''
+    def __repr__(self):
+        return 'pydrawing, author: charles, 微信公众号: Charles的皮卡丘'
 
 
 '''run'''
