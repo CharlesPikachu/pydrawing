@@ -7,14 +7,17 @@ Author:
     Charles的皮卡丘
 '''
 import cv2
-import torch
 import numpy as np
-import torch.nn as nn
-import torch.nn.functional as F
-import torchvision.models as models
-import torch.utils.model_zoo as model_zoo
-import torchvision.transforms as transforms
 from ..base import BaseBeautifier
+try:
+    import torch
+    import torch.nn as nn
+    import torch.nn.functional as F
+    import torchvision.models as models
+    import torch.utils.model_zoo as model_zoo
+    import torchvision.transforms as transforms
+except:
+    print('[Warning]: Pytorch and torchvision have not be installed, "fastneuralstyletransfer" will be not available.')
 
 
 '''ConvBlock'''

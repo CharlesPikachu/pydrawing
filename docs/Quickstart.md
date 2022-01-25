@@ -39,7 +39,7 @@ drawing_client.execute(filepath, 'cartoonise', config=config)
 
 2.公众号文章介绍
 
-[Introduction]()
+[Introduction](https://mp.weixin.qq.com/s/L0z1ZO1Qztk0EF1KAMfmbA)
 
 3.调用示例
 
@@ -299,7 +299,7 @@ drawing_client.execute(filepath, 'beziercurve')
 
 2.公众号文章介绍
 
-[Introduction]()
+[Introduction](https://mp.weixin.qq.com/s/L0z1ZO1Qztk0EF1KAMfmbA)
 
 3.调用示例
 
@@ -340,7 +340,7 @@ init_cfg = {
 
 2.公众号文章介绍
 
-[Introduction]()
+[Introduction](https://mp.weixin.qq.com/s/L0z1ZO1Qztk0EF1KAMfmbA)
 
 3.调用示例
 

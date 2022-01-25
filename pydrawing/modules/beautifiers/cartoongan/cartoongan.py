@@ -7,13 +7,16 @@ Author:
     Charles的皮卡丘
 '''
 import cv2
-import torch
 import numpy as np
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.utils.model_zoo as model_zoo
-import torchvision.transforms as transforms
 from ..base import BaseBeautifier
+try:
+    import torch
+    import torch.nn as nn
+    import torch.nn.functional as F
+    import torch.utils.model_zoo as model_zoo
+    import torchvision.transforms as transforms
+except:
+    print('[Warning]: Pytorch and torchvision have not be installed, "cartoongan" will be not available.')
 
 
 '''instance normalization'''
@@ -148,7 +151,7 @@ class CartoonGanBeautifier(BaseBeautifier):
         self.style = style
         self.use_cuda = use_cuda
         self.transformer = Transformer()
-        self.transformer.load_state_dict(model_zoo.load_url(self.model_urls[style]))
+        self.transformer.load_state_dict(model_zoo.load_url(self.model_urls[style], map_location='cpu'))
         self.transformer.eval()
         if torch.cuda.is_available() and self.use_cuda: self.transformer = self.transformer.cuda()
     '''迭代图片'''

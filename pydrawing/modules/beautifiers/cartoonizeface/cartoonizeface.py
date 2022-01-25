@@ -7,16 +7,17 @@ Author:
     Charles的皮卡丘
 '''
 import cv2
-import torch
 import numpy as np
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.utils.model_zoo as model_zoo
 from PIL import Image
 from ..base import BaseBeautifier
-from .facedetector import FaceDetector
-from .facesegmentor import FaceSegmentor
-from torch.nn.parameter import Parameter
+try:
+    import torch
+    import torch.nn as nn
+    import torch.nn.functional as F
+    import torch.utils.model_zoo as model_zoo
+    from torch.nn.parameter import Parameter
+except:
+    print('[Warning]: Pytorch and torchvision have not be installed, "cartoonizeface" will be not available.')
 
 
 '''ConvBlock'''
@@ -348,6 +349,8 @@ class ResnetGenerator(nn.Module):
 class CartoonizeFaceBeautifier(BaseBeautifier):
     def __init__(self, use_cuda=False, use_face_segmentor=True, **kwargs):
         super(CartoonizeFaceBeautifier, self).__init__(**kwargs)
+        from .facedetector import FaceDetector
+        from .facesegmentor import FaceSegmentor
         self.model_urls = {
             'transformer': 'https://github.com/CharlesPikachu/pydrawing/releases/download/checkpoints/cartoonizeface_transformer.pth',
         }
@@ -355,7 +358,7 @@ class CartoonizeFaceBeautifier(BaseBeautifier):
         self.use_face_segmentor = use_face_segmentor
         self.face_detector = FaceDetector(use_cuda=(torch.cuda.is_available() and self.use_cuda))
         self.transformer = ResnetGenerator(ngf=32, img_size=256, light=True)
-        self.transformer.load_state_dict(model_zoo.load_url(self.model_urls['transformer'])['genA2B'])
+        self.transformer.load_state_dict(model_zoo.load_url(self.model_urls['transformer'], map_location='cpu')['genA2B'])
         self.transformer.eval()
         if use_face_segmentor: 
             self.face_segmentor = FaceSegmentor()

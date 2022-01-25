@@ -82,7 +82,7 @@ class FaceSegmentor(nn.Module):
         except:
             raise RuntimeError('Please run "pip install sssegmentation" to install "ssseg"')
         self.ce2p = CE2P(SEGMENTOR_CFG, mode='TEST')
-        self.ce2p.load_state_dict(model_zoo.load_url('https://github.com/SegmentationBLWX/modelstore/releases/download/ssseg_ce2p/ce2p_resnet50os8_lip_train.pth')['model'])
+        self.ce2p.load_state_dict(model_zoo.load_url('https://github.com/SegmentationBLWX/modelstore/releases/download/ssseg_ce2p/ce2p_resnet50os8_lip_train.pth', map_location='cpu')['model'])
     '''forward'''
     def forward(self, x):
         return self.ce2p(x)
