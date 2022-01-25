@@ -7,7 +7,7 @@
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pydrawing)](https://pypi.org/project/pydrawing/)
 [![PyPI](https://img.shields.io/pypi/v/pydrawing)](https://pypi.org/project/pydrawing)
 [![license](https://img.shields.io/github/license/CharlesPikachu/pydrawing.svg)](https://github.com/CharlesPikachu/pydrawing/blob/master/LICENSE)
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/pydrawing?style=flat-square)](https://pypi.org/project/pydrawing/)
+[![PyPI - Downloads](https://pepy.tech/badge/pikachupytools)](https://pypi.org/project/pydrawing/)
 [![issue resolution](https://isitmaintained.com/badge/resolution/CharlesPikachu/pydrawing.svg)](https://github.com/CharlesPikachu/pydrawing/issues)
 [![open issues](https://isitmaintained.com/badge/open/CharlesPikachu/pydrawing.svg)](https://github.com/CharlesPikachu/pydrawing/issues)
 
