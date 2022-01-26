@@ -42,9 +42,10 @@ def SaveImage(image, savedir='outputs', savename='output', ext='png', logger_han
 '''读取视频'''
 def ReadVideo(videopath):
     capture, images = cv2.VideoCapture(videopath), []
+    fps = capture.get(cv2.CAP_PROP_FPS)
     while capture.isOpened():
         ret, frame = capture.read()
         if not ret: break
         images.append(frame)
     capture.release()
-    return images
+    return images, fps

@@ -29,7 +29,7 @@ class BaseBeautifier():
                 images = [cv2.imread(filepath)]
             # --视频
             elif filepath.split('.')[-1].lower() in ['mp4', 'avi']:
-                images = ReadVideo(filepath)
+                images, self.fps = ReadVideo(filepath)
                 if self.merge_audio:
                     p = subprocess.Popen(f'ffmpeg -i {filepath} -f mp3 {self.tmp_audio_path}')
                     while True:
