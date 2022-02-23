@@ -99,6 +99,7 @@ drawing_client.execute(filepath, random.choice(drawing_client.getallsupports()),
 - [Pydrawing](https://github.com/CharlesPikachu/pydrawing): Beautify your image or video.
 - [ImageCompressor](https://github.com/CharlesPikachu/imagecompressor): Image compressors written by pure python.
 - [FreeProxy](https://github.com/CharlesPikachu/freeproxy): Collecting free proxies from internet.
+- [Paperdl](https://github.com/CharlesPikachu/paperdl): Search and download paper from specific websites.
 
 
 # More
