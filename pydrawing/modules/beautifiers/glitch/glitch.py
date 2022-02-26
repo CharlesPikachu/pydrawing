@@ -17,7 +17,7 @@ class GlitchBeautifier(BaseBeautifier):
     def __init__(self, header_size=200, intensity=0.1, block_size=100, **kwargs):
         super(GlitchBeautifier, self).__init__(**kwargs)
         self.header_size, self.intensity, self.block_size = header_size, intensity, block_size
-    '''迭代图片'''
+    '''处理文件'''
     def process(self, filepath):
         checkdir(self.savedir)
         ext = filepath.split('.')[-1]

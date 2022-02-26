@@ -374,6 +374,73 @@ init_cfg = {
 }
 ```
 
+#### 照片怀旧风格
+
+1.相关论文
+
+暂无
+
+2.公众号文章介绍
+
+[Introduction]()
+
+3.调用示例
+
+```python
+from pydrawing import pydrawing
+​
+filepath = 'input.jpg'
+drawing_client = pydrawing()
+drawing_client.execute(filepath, 'nostalgicstyle')
+```
+
+4.config选项
+
+- savename: 保存结果时用的文件名, 默认值为"output";
+- savedir: 保存结果时用的文件夹, 默认值为"outputs";
+- merge_audio: 处理视频时, 是否把原视频中的音频合成到生成的视频中, 默认值为"False"。
+
+#### 手写笔记处理
+
+1.相关论文
+
+[Paper](https://mzucker.github.io/2016/09/20/noteshrink.html)
+
+2.公众号文章介绍
+
+[Introduction]()
+
+3.调用示例
+
+```python
+from pydrawing import pydrawing
+​
+config = {
+    'sat_threshold': 0.20, 
+    'value_threshold': 0.25, 
+    'num_colors': 8, 
+    'sample_fraction': 0.05,
+    'white_bg': False,
+    'saturate': True,
+}
+filepath = 'input.jpg'
+drawing_client = pydrawing()
+drawing_client.execute(filepath, 'noteprocessor', config=config)
+```
+
+4.config选项
+
+- savename: 保存结果时用的文件名, 默认值为"output";
+- savedir: 保存结果时用的文件夹, 默认值为"outputs";
+- merge_audio: 处理视频时, 是否把原视频中的音频合成到生成的视频中, 默认值为"False";
+- sat_threshold: 背景饱和度阈值, 默认值为"0.2";
+- value_threshold: 背景的阈值, 默认值为"0.25";
+- num_colors: 输出颜色的数量, 默认值为"8";
+- sample_fraction: 采样的像素占比, 默认值为"0.05";
+- white_bg: 使背景为白色, 默认值为"False";
+- saturate: 使颜色不饱和, 默认值为"True"。
+
+
 ## 随机运行一个小程序
 
 写如下代码，保存并运行即可：
