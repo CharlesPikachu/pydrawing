@@ -382,7 +382,7 @@ init_cfg = {
 
 2.公众号文章介绍
 
-[Introduction]()
+[Introduction](https://mp.weixin.qq.com/s/yRCt69u_gzPI85-vOrb_sQ)
 
 3.调用示例
 
@@ -408,7 +408,7 @@ drawing_client.execute(filepath, 'nostalgicstyle')
 
 2.公众号文章介绍
 
-[Introduction]()
+[Introduction](https://mp.weixin.qq.com/s/yRCt69u_gzPI85-vOrb_sQ)
 
 3.调用示例
 
@@ -448,7 +448,7 @@ drawing_client.execute(filepath, 'noteprocessor', config=config)
 
 2.公众号文章介绍
 
-[Introduction]()
+[Introduction](https://mp.weixin.qq.com/s/yRCt69u_gzPI85-vOrb_sQ)
 
 3.调用示例
 
@@ -482,7 +482,7 @@ drawing_client.execute(filepath, 'oilpainting​', config=config)
 
 2.公众号文章介绍
 
-[Introduction]()
+[Introduction](https://mp.weixin.qq.com/s/yRCt69u_gzPI85-vOrb_sQ)
 
 3.调用示例
 
