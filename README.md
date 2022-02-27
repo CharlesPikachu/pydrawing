@@ -33,11 +33,13 @@ You can star this repository to keep track of the project if it's helpful for yo
 | geneticfittingcircle       | [click](https://mp.weixin.qq.com/s/L0z1ZO1Qztk0EF1KAMfmbA) | N/A                                                                              | [click](./pydrawing/modules/beautifiers/geneticfitting)           |  遗传算法拟合图像-圆形   |
 | geneticfittingpolygon      | [click](https://mp.weixin.qq.com/s/L0z1ZO1Qztk0EF1KAMfmbA) | N/A                                                                              | [click](./pydrawing/modules/beautifiers/geneticfitting)           |  遗传算法拟合图像-多边形 |
 | nostalgicstyle             | [click]()                                                  | N/A                                                                              | [click](./pydrawing/modules/beautifiers/nostalgicstyle)           |  照片怀旧风格            |
+| photocorrection            | [click]()                                                  | N/A                                                                              | [click](./pydrawing/modules/beautifiers/photocorrection)          |  简单的照片矫正          |
 | pencildrawing              | [click](https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw) | [click](https://jiaya.me/archive/projects/pencilsketch/npar12_pencil.pdf)        | [click](./pydrawing/modules/beautifiers/pencildrawing)            |  铅笔素描画              |
 | cartoongan                 | [click](https://mp.weixin.qq.com/s/18fUOO5fH1PVUzTMNNCWwQ) | [click](https://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2205.pdf)    | [click](./pydrawing/modules/beautifiers/cartoongan)               |  卡通GAN                 |
 | fastneuralstyletransfer    | [click](https://mp.weixin.qq.com/s/Ed-1fWOIhI52G-Ugrv7n9Q) | [click](https://cs.stanford.edu/people/jcjohns/papers/eccv16/JohnsonECCV16.pdf)  | [click](./pydrawing/modules/beautifiers/fastneuralstyletransfer)  |  快速风格迁移            |
 | cartoonizeface             | [click](https://mp.weixin.qq.com/s/L0z1ZO1Qztk0EF1KAMfmbA) | [click](https://arxiv.org/pdf/1907.10830.pdf)                                    | [click](./pydrawing/modules/beautifiers/cartoonizeface)           |  人脸卡通化              |
 | noteprocessor              | [click]()                                                  | [click](https://mzucker.github.io/2016/09/20/noteshrink.html)                    | [click](./pydrawing/modules/beautifiers/noteprocessor)            |  手写笔记处理            |
+| oilpainting                | [click]()                                                  | [click](https://github.com/cyshih73/Faster-OilPainting/blob/master/Report.pdf)   | [click](./pydrawing/modules/beautifiers/oilpainting)              |  照片油画化              |
 
 
 # Install

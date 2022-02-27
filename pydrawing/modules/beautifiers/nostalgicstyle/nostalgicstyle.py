@@ -7,7 +7,6 @@ Author:
     Charles的皮卡丘
 '''
 import numpy as np
-from ...utils import checkdir
 from ..base import BaseBeautifier
 
 

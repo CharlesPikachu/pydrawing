@@ -440,6 +440,74 @@ drawing_client.execute(filepath, 'noteprocessor', config=config)
 - white_bg: 使背景为白色, 默认值为"False";
 - saturate: 使颜色不饱和, 默认值为"True"。
 
+#### 照片油画化
+
+1.相关论文
+
+[Paper](https://github.com/cyshih73/Faster-OilPainting/blob/master/Report.pdf)
+
+2.公众号文章介绍
+
+[Introduction]()
+
+3.调用示例
+
+```python
+from pydrawing import pydrawing
+​
+config = {
+    'edge_operator': 'sobel', 
+    'palette': 0, 
+    'brush_width': 5, 
+}
+filepath = 'input.jpg'
+drawing_client = pydrawing()
+drawing_client.execute(filepath, 'oilpainting​', config=config)
+```
+
+4.config选项
+
+- savename: 保存结果时用的文件名, 默认值为"output";
+- savedir: 保存结果时用的文件夹, 默认值为"outputs";
+- merge_audio: 处理视频时, 是否把原视频中的音频合成到生成的视频中, 默认值为"False";
+- brush_width: 画笔大小, 默认值为"5";
+- palette: 调色板颜色, 默认为"0", 代表使用原图的实际颜色;
+- edge_operator: 使用的边缘检测算子, 支持"sobel", "prewitt", "scharr"和"roberts", 默认值为"sobel"。
+
+#### 简单的照片矫正
+
+1.相关论文
+
+暂无。
+
+2.公众号文章介绍
+
+[Introduction]()
+
+3.调用示例
+
+```python
+from pydrawing import pydrawing
+​
+config = {
+    'epsilon_factor': 0.08, 
+    'canny_boundaries': [100, 200], 
+    'use_preprocess': False, 
+}
+filepath = 'input.jpg'
+drawing_client = pydrawing()
+drawing_client.execute(filepath, 'photocorrection', config=config)
+```
+
+4.config选项
+
+- savename: 保存结果时用的文件名, 默认值为"output";
+- savedir: 保存结果时用的文件夹, 默认值为"outputs";
+- merge_audio: 处理视频时, 是否把原视频中的音频合成到生成的视频中, 默认值为"False";
+- epsilon_factor: 多边形估计时的超参数, 默认为"0.08";
+- canny_boundaries: canny边缘检测算子的两个边界值, 默认为"[100, 200]";
+- use_preprocess: 是否在边缘检测前对图像进行预处理, 默认值为"False"。
+
 
 ## 随机运行一个小程序
 
