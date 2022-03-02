@@ -7,7 +7,8 @@
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pydrawing)](https://pypi.org/project/pydrawing/)
 [![PyPI](https://img.shields.io/pypi/v/pydrawing)](https://pypi.org/project/pydrawing)
 [![license](https://img.shields.io/github/license/CharlesPikachu/pydrawing.svg)](https://github.com/CharlesPikachu/pydrawing/blob/master/LICENSE)
-[![PyPI - Downloads](https://pepy.tech/badge/pikachupytools)](https://pypi.org/project/pydrawing/)
+[![PyPI - Downloads](https://pepy.tech/badge/pydrawing)](https://pypi.org/project/pydrawing/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/pydrawing?style=flat-square)](https://pypi.org/project/pydrawing/)
 [![issue resolution](https://isitmaintained.com/badge/resolution/CharlesPikachu/pydrawing.svg)](https://github.com/CharlesPikachu/pydrawing/issues)
 [![open issues](https://isitmaintained.com/badge/open/CharlesPikachu/pydrawing.svg)](https://github.com/CharlesPikachu/pydrawing/issues)
 
@@ -108,6 +109,7 @@ drawing_client.execute(filepath, random.choice(drawing_client.getallsupports()),
 - [ImageCompressor](https://github.com/CharlesPikachu/imagecompressor): Image compressors written by pure python.
 - [FreeProxy](https://github.com/CharlesPikachu/freeproxy): Collecting free proxies from internet.
 - [Paperdl](https://github.com/CharlesPikachu/paperdl): Search and download paper from specific websites.
+- [Sciogovterminal](https://github.com/CharlesPikachu/sciogovterminal): Browse "The State Council Information Office of the People's Republic of China" in the terminal.
 
 
 # More
