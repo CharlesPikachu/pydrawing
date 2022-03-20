@@ -5,15 +5,15 @@
 
 #### 图像卡通化
 
-1.相关论文
+**1.相关论文**
 
 暂无
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/efwNQl0JVJt6_x_evdL41A)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -24,7 +24,7 @@ drawing_client = pydrawing.pydrawing()
 drawing_client.execute(filepath, 'cartoonise', config=config)
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -33,15 +33,15 @@ drawing_client.execute(filepath, 'cartoonise', config=config)
 
 #### 人脸卡通化
 
-1.相关论文
+**1.相关论文**
 
 [Paper](https://arxiv.org/pdf/1907.10830.pdf)
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/L0z1ZO1Qztk0EF1KAMfmbA)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -52,7 +52,7 @@ drawing_client = pydrawing.pydrawing()
 drawing_client.execute(filepath, 'cartoonizeface', config=config)
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -62,15 +62,15 @@ drawing_client.execute(filepath, 'cartoonizeface', config=config)
 
 #### 铅笔素描画
 
-1.相关论文
+**1.相关论文**
 
 [Paper](https://jiaya.me/archive/projects/pencilsketch/npar12_pencil.pdf)
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -81,7 +81,7 @@ drawing_client = pydrawing.pydrawing()
 drawing_client.execute(filepath, 'pencildrawing', config=config)
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -96,15 +96,15 @@ drawing_client.execute(filepath, 'pencildrawing', config=config)
 
 #### 卡通GAN
 
-1.相关论文
+**1.相关论文**
 
 [Paper](https://openaccess.thecvf.com/content_cvpr_2018/CameraReady/2205.pdf)
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/18fUOO5fH1PVUzTMNNCWwQ)
 
-3.调用示例
+**3.调用示例**
 ```python
 from pydrawing import pydrawing
 
@@ -114,7 +114,7 @@ drawing_client = pydrawing.pydrawing()
 drawing_client.execute(filepath, 'cartoongan', config=config)
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -124,15 +124,15 @@ drawing_client.execute(filepath, 'cartoongan', config=config)
 
 #### 快速风格迁移
 
-1.相关论文
+**1.相关论文**
 
 [Paper](https://cs.stanford.edu/people/jcjohns/papers/eccv16/JohnsonECCV16.pdf)
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/Ed-1fWOIhI52G-Ugrv7n9Q)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -143,7 +143,7 @@ drawing_client = pydrawing()
 drawing_client.execute(filepath, 'fastneuralstyletransfer', config=config)
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -153,15 +153,15 @@ drawing_client.execute(filepath, 'fastneuralstyletransfer', config=config)
 
 #### 抖音特效
 
-1.相关论文
+**1.相关论文**
 
 暂无
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/RRnrO2H84pvtUdDsAYD9Qg)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -171,7 +171,7 @@ drawing_client = pydrawing.pydrawing()
 drawing_client.execute(filepath, 'douyineffect')
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -179,15 +179,15 @@ drawing_client.execute(filepath, 'douyineffect')
 
 #### 视频转字符画
 
-1.相关论文
+**1.相关论文**
 
 暂无
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/yaNQJyeUeisOenEeoVsgDg)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -197,7 +197,7 @@ drawing_client = pydrawing.pydrawing()
 drawing_client.execute(filepath, 'characterize')
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -205,15 +205,15 @@ drawing_client.execute(filepath, 'characterize')
 
 #### 拼马赛克图片
 
-1.相关论文
+**1.相关论文**
 
 暂无
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/BG1VW3jx0LUazhhifBapVw)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -224,7 +224,7 @@ drawing_client = pydrawing.pydrawing()
 drawing_client.execute(filepath, 'photomosaic', config=config)
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -234,15 +234,15 @@ drawing_client.execute(filepath, 'photomosaic', config=config)
 
 #### 信号故障特效
 
-1.相关论文
+**1.相关论文**
 
 暂无
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/Yv0uPLsTGwVnj_PKqYCmAw)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -252,7 +252,7 @@ drawing_client = pydrawing.pydrawing()
 drawing_client.execute(filepath, 'glitch')
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -263,15 +263,15 @@ drawing_client.execute(filepath, 'glitch')
 
 #### 贝塞尔曲线画画
 
-1.相关论文
+**1.相关论文**
 
 暂无
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/SWpaTPw9tOLs5h1EgP30Vw)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -281,7 +281,7 @@ drawing_client = pydrawing.pydrawing()
 drawing_client.execute(filepath, 'beziercurve')
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -293,15 +293,15 @@ drawing_client.execute(filepath, 'beziercurve')
 
 #### 遗传算法拟合图像-圆形
 
-1.相关论文
+**1.相关论文**
 
 暂无
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/L0z1ZO1Qztk0EF1KAMfmbA)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -311,7 +311,7 @@ drawing_client = pydrawing.pydrawing()
 drawing_client.execute(filepath, 'geneticfittingcircle')
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -334,15 +334,15 @@ init_cfg = {
 
 #### 遗传算法拟合图像-多边形
 
-1.相关论文
+**1.相关论文**
 
 暂无
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/L0z1ZO1Qztk0EF1KAMfmbA)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -352,7 +352,7 @@ drawing_client = pydrawing.pydrawing()
 drawing_client.execute(filepath, 'geneticfittingpolygon')
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -376,15 +376,15 @@ init_cfg = {
 
 #### 照片怀旧风格
 
-1.相关论文
+**1.相关论文**
 
 暂无
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/yRCt69u_gzPI85-vOrb_sQ)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -394,7 +394,7 @@ drawing_client = pydrawing()
 drawing_client.execute(filepath, 'nostalgicstyle')
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -402,15 +402,15 @@ drawing_client.execute(filepath, 'nostalgicstyle')
 
 #### 手写笔记处理
 
-1.相关论文
+**1.相关论文**
 
 [Paper](https://mzucker.github.io/2016/09/20/noteshrink.html)
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/yRCt69u_gzPI85-vOrb_sQ)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -428,7 +428,7 @@ drawing_client = pydrawing()
 drawing_client.execute(filepath, 'noteprocessor', config=config)
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -442,15 +442,15 @@ drawing_client.execute(filepath, 'noteprocessor', config=config)
 
 #### 照片油画化
 
-1.相关论文
+**1.相关论文**
 
 [Paper](https://github.com/cyshih73/Faster-OilPainting/blob/master/Report.pdf)
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/yRCt69u_gzPI85-vOrb_sQ)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -465,7 +465,7 @@ drawing_client = pydrawing()
 drawing_client.execute(filepath, 'oilpainting​', config=config)
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -476,15 +476,15 @@ drawing_client.execute(filepath, 'oilpainting​', config=config)
 
 #### 简单的照片矫正
 
-1.相关论文
+**1.相关论文**
 
 暂无。
 
-2.公众号文章介绍
+**2.公众号文章介绍**
 
 [Introduction](https://mp.weixin.qq.com/s/yRCt69u_gzPI85-vOrb_sQ)
 
-3.调用示例
+**3.调用示例**
 
 ```python
 from pydrawing import pydrawing
@@ -499,7 +499,7 @@ drawing_client = pydrawing()
 drawing_client.execute(filepath, 'photocorrection', config=config)
 ```
 
-4.config选项
+**4.config选项**
 
 - savename: 保存结果时用的文件名, 默认值为"output";
 - savedir: 保存结果时用的文件夹, 默认值为"outputs";
@@ -511,7 +511,7 @@ drawing_client.execute(filepath, 'photocorrection', config=config)
 
 ## 随机运行一个小程序
 
-写如下代码，保存并运行即可：
+写如下代码，保存并运行即可:
 
 ```python
 import random
@@ -525,3 +525,22 @@ config = {
 drawing_client = pydrawing.pydrawing()
 drawing_client.execute(filepath, random.choice(drawing_client.getallsupports()), config=config)
 ```
+
+部分测试效果如下:
+
+<div align="center">
+  <img src="https://github.com/CharlesPikachu/pydrawing/raw/master/docs/screenshot_characterize.gif" width="600"/>
+</div>
+<br />
+<div align="center">
+  <img src="https://github.com/CharlesPikachu/pydrawing/raw/master/docs/screenshot_fastneuralstyletransfer.gif" width="600"/>
+</div>
+<br />
+<div align="center">
+  <img src="https://github.com/CharlesPikachu/pydrawing/raw/master/docs/screenshot_photomosaic.png" width="600"/>
+</div>
+<br />
+<div align="center">
+  <img src="https://github.com/CharlesPikachu/pydrawing/raw/master/docs/screeshot_noteprocessor.png" width="600"/>
+</div>
+<br />
