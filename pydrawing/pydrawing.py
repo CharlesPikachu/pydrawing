@@ -20,6 +20,7 @@ class pydrawing():
         for key, value in kwargs.items(): setattr(self, key, value)
         self.supported_beautifiers = self.initializebeautifiers()
         self.logger_handle = Logger(kwargs.get('logfilepath', 'pydrawing.log'))
+        print(self)
     '''执行对应的算法'''
     def execute(self, filepath='asserts/dog.jpg', beautifier_type=None, config={}):
         assert beautifier_type in self.supported_beautifiers, 'unsupport beautifier_type %s' % beautifier_type
@@ -52,9 +53,9 @@ class pydrawing():
             'fastneuralstyletransfer': FastNeuralStyleTransferBeautifier,
         }
         return supported_beautifiers
-    '''repr'''
-    def __repr__(self):
-        return 'pydrawing, author: charles, 微信公众号: Charles的皮卡丘'
+    '''str'''
+    def __str__(self):
+        return 'Welcome to use Pydrawing!\nYou can visit https://github.com/CharlesPikachu/pydrawing for more details.'
 
 
 '''run'''
