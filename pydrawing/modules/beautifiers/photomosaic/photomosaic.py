@@ -35,7 +35,7 @@ class PhotomosaicBeautifier(BaseBeautifier):
     '''读取所有源图片并计算对应的颜色平均值'''
     def ReadSourceImages(self):
         src_images, avg_colors = [], []
-        for path in tqdm(glob.glob("{}/*.jpg".format(self.src_images_dir))):
+        for path in tqdm(glob.glob("{}/*[jpg,jpeg,png,gif]".format(self.src_images_dir))):
             image = cv2.imread(path, cv2.IMREAD_COLOR)
             if image.shape[-1] != 3: continue
             image = cv2.resize(image, (self.block_size, self.block_size))
