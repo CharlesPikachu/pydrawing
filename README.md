@@ -23,7 +23,7 @@ You can star this repository to keep track of the project if it's helpful for yo
 
 
 # Support List
-| Beautifier                 | Introduction                                               | Related Paper                                                                    | Code                                                              |  in Chinese              |
+| Beautifier_EN              | Introduction                                               | Related Paper                                                                    | Code                                                              |  Beautifier_CN           |
 | :----:                     | :----:                                                     | :----:                                                                           | :----:                                                            |  :----:                  |
 | glitch                     | [click](https://mp.weixin.qq.com/s/Yv0uPLsTGwVnj_PKqYCmAw) | N/A                                                                              | [click](./pydrawing/modules/beautifiers/glitch)                   |  信号故障特效            |
 | douyineffect               | [click](https://mp.weixin.qq.com/s/RRnrO2H84pvtUdDsAYD9Qg) | N/A                                                                              | [click](./pydrawing/modules/beautifiers/douyineffect)             |  抖音特效                |
